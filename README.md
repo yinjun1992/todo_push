@@ -24,3 +24,11 @@ docker-compose up -d
 ```
 访问
 >localhost:8099
+
+调试仪表盘
+```bash
+php bin/swoft dev:publish swoft/devtool
+// -f 将会删除旧的资源，每次devtool更新后请都带上这个选项重新执行一次命令
+php bin/swoft dev:publish swoft/devtool -f
+```
+>http://localhost:8099/__devtool/
